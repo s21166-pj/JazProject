@@ -18,24 +18,24 @@ public class Nbp {
     @ApiModelProperty(notes = "Name of the metal", required = true, value = "metal", example = "Gold")
     private MetalCategory metal;
     @ApiModelProperty(notes = "Price of the metal", required = true, value = "averagePrice", example = "7034,55")
-    private float averagePrice;
+    private float average_price;
     @ApiModelProperty(notes = "Time frame, date From", required = true, value = "dateFrom", example = "2021-05-25")
-    private Date dateFrom;
+    private Date date_from;
     @ApiModelProperty(notes = "Time frame, date to", required = true, value = "dateTo", example = "2021-05-26")
-    private Date dateTo;
+    private Date date_to;
     @ApiModelProperty(notes = "Day and time of the request", required = true, value = "requestTime", example = "17:34:55")
-    private Timestamp requestTime;
+    private Timestamp request_time;
 
     public Nbp() {
     }
 
-    public Nbp(Long id, MetalCategory metal, float averagePrice, Date dateFrom, Date dateTo, Timestamp requestTime) {
+    public Nbp(Long id, MetalCategory metal, float average_price, Date date_from, Date date_to, Timestamp request_time) {
         this.id = id;
         this.metal = metal;
-        this.averagePrice = averagePrice;
-        this.dateFrom = dateFrom;
-        this.dateTo = dateTo;
-        this.requestTime = requestTime;
+        this.average_price = average_price;
+        this.date_from = date_from;
+        this.date_to = date_to;
+        this.request_time = request_time;
     }
 
     public Long getId() {
@@ -54,35 +54,35 @@ public class Nbp {
         this.metal = metal;
     }
 
-    public float getAveragePrice() {
-        return averagePrice;
+    public float getAverage_price() {
+        return average_price;
     }
 
-    public void setAveragePrice(float averagePrice) {
-        this.averagePrice = averagePrice;
+    public void setAverage_price(float averagePrice) {
+        this.average_price = averagePrice;
     }
 
-    public Date getDateFrom() {
-        return dateFrom;
+    public Date getDate_from() {
+        return date_from;
     }
 
-    public void setDateFrom(Date dateFrom) {
-        this.dateFrom = dateFrom;
+    public void setDate_from(Date dateFrom) {
+        this.date_from = dateFrom;
     }
 
-    public Date getDateTo() {
-        return dateTo;
+    public Date getDate_to() {
+        return date_to;
     }
 
-    public void setDateTo(Date dateTo) {
-        this.dateTo = dateTo;
+    public void setDate_to(Date dateTo) {
+        this.date_to = dateTo;
     }
 
-    public Timestamp getRequestTime() {
-        return requestTime;
+    public Timestamp getRequest_time() {
+        return request_time;
     }
 
-    public void setRequestTime(Timestamp requestTime) {
-        this.requestTime = requestTime;
+    public void setRequest_time(Timestamp requestTime) {
+        this.request_time = requestTime;
     }
 }
